@@ -1,0 +1,13 @@
+<odoo noupdate="1">
+    <!-- Add default configuration parameter -->
+    <record id="set_by_pass_restrictive_test" model="ir.config_parameter">
+        <field name="key">by_pass_restrictive_test.by_pass_restrictive_test</field>
+        <field name="value">False</field>
+    </record>
+
+    <record id="by_pass_restrictive_test_names" model="ir.config_parameter">
+        <field name="key">by_pass_restrictive_test.by_pass_restrictive_test_names</field>
+        <field name="value"></field>
+    </record>
+
+</odoo>

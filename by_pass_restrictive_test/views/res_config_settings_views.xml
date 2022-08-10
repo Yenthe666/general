@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_bypass_test_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.test</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='user_default_rights']" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box"  title="By pass some restrictives tests" id="by_pass_restrictive_test">
+                    <div class="o_setting_left_pane">
+                        <field name="by_pass_restrictive_test"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label string="By pass restrictive test" for="by_pass_restrictive_test"/>
+                        <div class="text-muted">
+                            A comma separated string listing method names which will be skipped
+                        </div>
+                        <div class="content-group" attrs="{'invisible': [('by_pass_restrictive_test','=',False)]}">
+                            <field name="by_pass_restrictive_test_names"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
