@@ -1,6 +1,6 @@
 # general
 Generic / random Odoo apps not related to one feature or app:
-- [by_pass_restrictive_test] (#by_pass_restrictive_test): allows you to configure which automated Odoo tests you want to be skipped.
+- [by_pass_restrictive_test](#by_pass_restrictive_test): allows you to configure which automated Odoo tests you want to be skipped.
 
 ## by_pass_restrictive_test
 In some cases there are Odoo tests that you want to skip as they are too restrictive and you change the results you get back on purpose.
